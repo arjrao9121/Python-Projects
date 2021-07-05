@@ -1,3 +1,7 @@
+# Author - arjrao9
+# purpose of this code is to check the password strenght of the user.
+
+
 import re
 
 
@@ -18,8 +22,8 @@ def inputProcessor():
 
             break
 
-        elif not re.search('[0-9]', password):
-            print("Password must countain at least one letter from [0-9]")
+        elif not re.search('[ 0-9 ]', password):
+            print("Password must countain at least one number from [0-9]")
             print("Password strenght = 50/100")
             break
 
